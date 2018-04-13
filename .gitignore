@@ -1,3 +1,8 @@
 heap_sort/hs
 quick_sort/qs
 quick_sort_3_way/qs_3way
+heap_sort/test
+bfprt/test
+mqs_3way/test
+qs/test
+qs_3way/test
