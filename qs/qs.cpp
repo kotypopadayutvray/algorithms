@@ -13,7 +13,7 @@ template<typename T> int partitionQS(T *array, int li, int hi) {
 
 template<typename T> void quickSort(T *array, int lowBound, int highBound) {
   if (lowBound < highBound) {
-    T pi = partitionQS(array, lowBound, highBound);
+    int pi = partitionQS(array, lowBound, highBound);
     quickSort(array, lowBound, pi - 1);
     quickSort(array, pi + 1, highBound);
   }

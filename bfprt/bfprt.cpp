@@ -31,7 +31,7 @@ template<typename T> T kthOrderStatistic(T *array, int left, int right, int k) {
   const int ELEMENTS_COUNT = 5;
   int length = right - left + 1;
   int countOfMedians = length / ELEMENTS_COUNT + (length % ELEMENTS_COUNT == 0 ? 0 : 1);
-  int *median = new int[countOfMedians];
+  T *median = new T[countOfMedians];
   int median_index = 0;
   for (median_index = 0; median_index < length / ELEMENTS_COUNT; median_index++) {
     // Находим смещение левой границы границы
@@ -41,7 +41,7 @@ template<typename T> T kthOrderStatistic(T *array, int left, int right, int k) {
     median[median_index] = findMedian(array + left + median_index * ELEMENTS_COUNT, length % ELEMENTS_COUNT);
     median_index++;
   }
-  int medianOfMedian = findMedian(median, countOfMedians);
+  T medianOfMedian = findMedian(median, countOfMedians);
   delete [] median;
   int pos = partitionBFPRT(array, left, right, medianOfMedian);
   if (pos - left == k - 1) {

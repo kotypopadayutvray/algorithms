@@ -6,3 +6,6 @@ bfprt/test
 mqs_3way/test
 qs/test
 qs_3way/test
+*.gch
+test
+compare_algorithms
