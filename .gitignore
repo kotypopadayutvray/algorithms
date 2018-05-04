@@ -7,5 +7,6 @@ mqs_3way/test
 qs/test
 qs_3way/test
 *.gch
-test
-compare_algorithms
+test/test
+compare_algorithms/compare_algorithms
+program/program

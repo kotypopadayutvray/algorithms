@@ -1,8 +1,8 @@
-#include "./bfprt/bfprt.h"
-#include "./heap_sort/heap_sort.h"
-#include "./mqs_3way/mqs_3way.h"
-#include "./qs/qs.h"
-#include "./qs_3way/qs_3way.h"
+#include "../bfprt/bfprt.h"
+#include "../heap_sort/heap_sort.h"
+#include "../mqs_3way/mqs_3way.h"
+#include "../qs/qs.h"
+#include "../qs_3way/qs_3way.h"
 #include <iostream>
 
 int array1[] = {
